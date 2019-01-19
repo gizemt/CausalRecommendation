@@ -10,7 +10,8 @@
 <p align="justify"> One way of correcting such bias is to resample the input dataset such that the resulting dataset would be as if it is obtained by a randomized experiment. In order to implement that correction, I used Liang et. al. [2]'s Bayesian exposure model, measured the exposure score of each user to an item empirically and weighted the samples based on those exposure scores. </p>
 
 <p align="justify"> The above-mentioned weighting process yields an unbiased recommender. Hence, it is expected the system to not favor popular or more exposed items, but recommend unpopular items just as much for the requesting users. I exploited this advantage to generate 3 different modes so that the system can make popular, best match (most likable) and hidden gem recommendations by weighting the movies by their popularity scores appropriately.</p>
-### References
+
+#### References
 [1] R. Salakhutdinov and A. Mnih, “Probabilistic matrix factorization,” in Proceedings of the 20th International Conference on Neural Information Processing Systems, USA, 2007, NIPS’07, pp. 1257–1264, Curran Associates Inc.
 
 [2] D. Liang, L. Charlin, and D. M. Blei, “Causal inference for recommendation,” in Workshop on Causation: Foundation to Application, 32nd Conference on Uncertainty in Artificial Intelligence, 2016.
